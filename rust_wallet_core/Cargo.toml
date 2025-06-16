@@ -4,3 +4,27 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+bip39 = "1.2"           # For mnemonic generation and handling
+secp256k1 = "0.24"      # For private/public key cryptography (Bitcoin/Ethereum)
+
+# For AES encryption and decryption
+aes-gcm = "0.10"
+aes = "0.8"
+aead = "0.5"
+rand = "0.8"
+
+# To securely zero memory holding secrets
+zeroize = "1.5"
+
+# For FFI (return strings and handle C interop)
+libc = "0.2"
+
+# For base58 (used in Bitcoin addresses)
+bs58 = "0.4"
+
+# For base64 (used in many formats)
+base64 = "0.21"
+
+# To support SHA-2 hashing (for various key derivations)
+sha2 = "0.10"
+hmac = "0.12"
